@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link href = "./index.css" rel = "stylesheet" type="text/css">
 </head>
-<body class="container">
-    <h1>Rock Paper Scissors</h1>
-    <h3>Played in the console</h3>
-    <div>Select your next move : Rock, Paper or Scissors</div><br>
-    <div>
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+<body>
+    <div class="container"><h1>Rock Paper Scissors</h1></div>
+    
+    <div class="buttons">
+        <div class="yours">
+            <h3>Your Choice</h3>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button></div>
+        <div class="computer"><h3>Computer Choice</h3><div class="cpuChoice"></div></div>
     </div> 
     <br>
-    <div id="result"></div><br>
+    <div id="gameResult"></div><br>
+    <div id="scores"></div><br>
+    <div id="re"><button id="restart">RESTART GAME</button></div><br>
     <script src="./index.js"></script>
+
 </body>
 <footer>Made by <a href="https://github.com/Loicscrn">LoicSCRN</a> for <a href="https://www.theodinproject.com">The Odin Project - Foundation Course</a> in 2024.</footer>
+<div id="result"></div><br>
 </html>
